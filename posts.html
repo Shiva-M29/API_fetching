@@ -13,11 +13,12 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="posts.html">Posts</a>
+       <a href="postsdemo.html">postsdemo</a>
     </nav>
   </header>
 
   <main>
-    <button id="fetchBtn" onclick="fetchPosts()">Load Posts</button>
+    <button id="fetchBtn" onclick="fetchPosts(window.location.pathname)">Load Posts</button>
     <div id="postsContainer"></div>
     <p id="errorMsg" class="error"></p>
   </main>
